@@ -1,2 +1,2 @@
 # LongestWord
-Program to find the length and the longest word in a project
+Program to find the the longest word and it's length from a sentence
