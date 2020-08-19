@@ -36,6 +36,14 @@ namespace LongestWord
 				}
 				return longestWordInfo;
 			}
+
+			static void Main(string[] args)
+			{
+				string s = "The cow jumped over the moon.";
+				WordInfo testWordInfo = LongestWord(s);
+
+				Console.WriteLine(String.Format("Longest word in the string: \"{0}\" Length of the word: {1}", testWordInfo.WordName, testWordInfo.WordLength));
+			}
 		}
 	}
 }
