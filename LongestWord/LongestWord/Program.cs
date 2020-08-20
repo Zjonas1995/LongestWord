@@ -26,7 +26,7 @@ namespace LongestWord
 			}
 
 			/* Assumptions
-			 * - The he prompt wanted this method to return both the string and the length, so I decided to utilize a WordInfo object. In most similar cases
+			 * - The prompt wanted this method to return both the string and the length, so I decided to utilize a WordInfo object. In most similar cases
 			 *   I would just return a string and then call string.Length where the length is needed.
 			 * - If passed a null string, I will return null. The assumption is that null further null handling will occur wherever the method is called if
 			 *   it is needed. (An alternative could be to return an empty string with length 0 in the null case).
