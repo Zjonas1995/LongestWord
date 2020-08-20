@@ -39,5 +39,27 @@ namespace LongestWordTests
 			Assert.AreEqual(expectedReturn, emptyStringResult.WordName, string.Format("The expected result: \"{0}\" did not match the returned value: \"{1}\"", expectedReturn, emptyStringResult.WordName));
 			Assert.AreEqual(expectedReturn.Length, emptyStringResult.WordLength, string.Format("The expected length: \"{0}\" did not match the returned length: \"{1}\"", expectedReturn, emptyStringResult.WordLength));
 		}
+
+		[TestMethod]
+		public void TwoWordsWithEqualLengthTest()
+		{
+			string str = "Two words of equal size";
+			string expectedReturn = "words";
+
+			WordInfo emptyStringResult = WordInfo.LongestWordMethods.LongestWord(str);
+			Assert.AreEqual(expectedReturn, emptyStringResult.WordName, string.Format("The expected result: \"{0}\" did not match the returned value: \"{1}\"", expectedReturn, emptyStringResult.WordName));
+			Assert.AreEqual(expectedReturn.Length, emptyStringResult.WordLength, string.Format("The expected length: \"{0}\" did not match the returned length: \"{1}\"", expectedReturn, emptyStringResult.WordLength));
+		}
+
+		[TestMethod]
+		public void RegexMethodWordsSeperatedByPunctuation()
+		{
+			string str = "The cow!jumped?over:the,moon.";
+			string expectedReturn = "jumped";
+
+			WordInfo emptyStringResult = WordInfo.LongestWordMethods.LongestWordRegex(str);
+			Assert.AreEqual(expectedReturn, emptyStringResult.WordName, string.Format("The expected result: \"{0}\" did not match the returned value: \"{1}\"", expectedReturn, emptyStringResult.WordName));
+			Assert.AreEqual(expectedReturn.Length, emptyStringResult.WordLength, string.Format("The expected length: \"{0}\" did not match the returned length: \"{1}\"", expectedReturn, emptyStringResult.WordLength));
+		}
 	}
 }
