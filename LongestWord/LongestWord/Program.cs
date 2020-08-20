@@ -49,7 +49,6 @@ namespace LongestWord
 			static WordInfo LongestWordRegex(string str)
 			{
 				WordInfo longestWordInfo = new WordInfo();
-				//string[] result = Regex.Matches(s, "\\w+('(s|d|t|ve|m))?").Cast<Match>().Select(x => x.Value).ToArray();
 
 				string splitOn = @"[\s.,;!?:]+";
 
