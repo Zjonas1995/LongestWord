@@ -1,8 +1,9 @@
 # LongestWord
 Program to find the the longest word and it's length from a sentence
 
------------ To execute Tests -----------
+--------------------------------- To execute Tests ---------------------------------
 This project was written using the .net framework, so a pre-requisite will be to have .net sdk, and having visual studio while not necessary is suggested.
+
 
 Using Visual Studio:
 - Open project in Visual Studio 
