@@ -52,6 +52,7 @@ namespace LongestWordTests
 		}
 
 		[TestMethod]
+		//Specific to my bonus regex method
 		public void RegexMethodWordsSeperatedByPunctuation()
 		{
 			string str = "The cow!jumped?over:the,moon.";
